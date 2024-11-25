@@ -47,16 +47,16 @@ view: users {
     sql: ${TABLE}.state ;;
     html:
     {% if state._value == "California" %}
-    <img src="https://www.istockphoto.com/photo/cute-ginger-cat-gm1443562748-482502032" height="170" width="255">
-    {% elsif state._value == "New York" %}
-    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fpuppy&psig=AOvVaw1-BVLwykaYjUIUoz9r-seL&ust=1732609575005000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNiq4uOH94kDFQAAAAAdAAAAABAE" height="170" width="255">
-    {% elsif state._value == "Colorado" %}
-    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dmonkey&psig=AOvVaw3iMnWkioEThERVE2Wm6BHq&ust=1732609595880000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMiE-POH94kDFQAAAAAdAAAAABAE" height="170" width="255">
-    {% elsif state._value == "Illinois"%}
-    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fcute-ant&psig=AOvVaw1-CwoTB56-DjI_454Es6l5&ust=1732609629288000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLi1hv2H94kDFQAAAAAdAAAAABAE" height="170" width="255">
-    {% else %}
-    <p>No Image Added</p>
-    {% endif %} ;;
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg" height="170" width="255">
+              {% elsif state._value == "New York" %}
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_New_York.svg/1200px-Flag_of_New_York.svg.png" height="170" width="255">
+              {% elsif state._value == "Colorado" %}
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Flag_of_Colorado.svg/255px-Flag_of_Colorado.svg.png" height="170" width="255">
+              {% elsif state._value == "Illinois"%}
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_Illinois.svg/1200px-Flag_of_Illinois.svg.png" height="170" width="255">
+              {% else %}
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png" height="170" width="170">
+              {% endif %} ;;
   }
   dimension: zip {
     type: zipcode
